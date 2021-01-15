@@ -1,0 +1,13 @@
+securitySchemes:
+  Open Id Connect:
+    type: oauth2
+    flows:
+      authorizationCode:
+        authorizationUrl: https://falconidentityserver.azurewebsites.net/connect/authorize
+        tokenUrl: https://falconidentityserver.azurewebsites.net/connect/token
+        refreshUrl: ""
+        scopes:
+          openid: Open Id scope
+          profile: Name scope
+          email: Email scope
+        usePkceWithAuthorizationCodeGrant: true
